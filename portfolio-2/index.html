@@ -3,7 +3,218 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- =============== Remixicons ================ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- =============== CSS ================ -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio Website</title>
   </head>
-  <body></body>
+  <body>
+    <!-- =============== Header ================ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">Hello</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#resume" class="nav__link">Resume</a></li>
+            <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+            <li><a href="#blog" class="nav__link">Blog</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-fill"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-2-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============== Main ================ -->
+    <main class="main">
+      <!-- =============== Home ================ -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="images/profile.png" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__name">Randy Tan_</h1>
+            <p class="home__work">Front end developer</p>
+            <dl class="home__list">
+              <dt>AGE:</dt>
+              <dd>27</dd>
+              <dt>PHONE:</dt>
+              <dd>(+84) 909481620</dd>
+              <dt>EMAIL:</dt>
+              <dd>sayoonara3344@gmail.com</dd>
+              <dt>ADDRESS:</dt>
+              <dd>Ha Ton Quyen 156, Viet Nam</dd>
+            </dl>
+            <div class="home__socials">
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== Hello ================ -->
+      <section class="hello section container">
+        <h2 class="section__title">Hi_</h2>
+
+        <p class="hello__details text-lg">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime et
+          eaque, corrupti fugit dolorum tenetur iusto repellat iure quod
+          accusantium molestias totam dolor porro ab iste, a accusamus
+          distinctio exercitationem fuga mollitia? Praesentium, nesciunt
+          sapiente?
+        </p>
+        <a href="images/John-Cv.pdf" class="button button--flex text-sm">
+          <i class="ri-download-2-fill"></i> DOWNLOAD CV
+        </a>
+      </section>
+
+      <!-- =============== Services ================ -->
+      <section class="services section container" id="services">
+        <h2 class="section__title">Services_</h2>
+
+        <div class="services__container grid">
+          <div class="services__item">
+            <div class="icon__box">
+              <img src="images/web-design.png" alt="" class="services__icon" />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">WEB DESIGN</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img src="images/laptop.png" alt="" class="services__icon" />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">WEB DEVELOPMENT</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="images/paint-palette.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">CREATIVE DESIGN</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img
+                src="images/smartphone-call.png"
+                alt=""
+                class="services__icon"
+              />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">RESPONSIVE DESIGN</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img src="images/verified.png" alt="" class="services__icon" />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">BRANDING IDENTITY</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <div class="icon__box">
+              <img src="images/operator.png" alt="" class="services__icon" />
+              <div class="services__dot">
+                <span class="dot"></span>
+              </div>
+            </div>
+
+            <h3 class="services__title text-lg">24/7 SUPPORT</h3>
+            <p class="services__detail">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              voluptatem iste iure fugit architecto commodi, ipsa delectus
+              nobis.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============== JS ================ -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
