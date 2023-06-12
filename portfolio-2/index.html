@@ -682,6 +682,7 @@
                 <div class="contact__input-div">
                   <input
                     type="text"
+                    name="name"
                     placeholder="Your name"
                     class="contact__input"
                     id="contact-name"
@@ -691,6 +692,7 @@
                 <div class="contact__input-div">
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your e-mail"
                     class="contact__input"
                     id="contact-email"
@@ -699,6 +701,7 @@
 
                 <div class="contact__input-div">
                   <textarea
+                    name="message"
                     placeholder="Type the message here"
                     class="contact__input textarea"
                     id="message"
@@ -730,6 +733,12 @@
 
     <!-- =============== Swiper JS ================ -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- =============== Email JS ================ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
     <!-- =============== JS ================ -->
     <script src="js/main.js"></script>
