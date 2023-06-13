@@ -1,4 +1,4 @@
-/* ============== Setting JS like jQuery =============== */
+/*  ============== Setting JS like jQuery =============== */
 const $ = document.querySelector.bind(document),
   $$ = document.querySelectorAll.bind(document);
 
