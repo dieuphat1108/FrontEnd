@@ -17,6 +17,23 @@
 
     <!-- =============== CSS ================ -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skins/color-1.css" />
+
+    <!-- =============== CSS Skin Colors ================ -->
+    <link
+      rel="stylesheet"
+      href="css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
 
     <title>Portfolio Website</title>
   </head>
@@ -727,6 +744,18 @@
         </div>
       </section>
     </main>
+
+    <!-- =============== Style Switcher ================ -->
+    <div class="style__switcher">
+      <div class="style__switcher-toggler">
+        <i class="ri-settings-4-fill"></i>
+      </div>
+
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      </div>
+    </div>
 
     <!-- =============== Mix It Up ================ -->
     <script src="js/mixitup.min.js"></script>
