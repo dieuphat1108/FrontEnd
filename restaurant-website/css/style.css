@@ -130,6 +130,27 @@ img {
 }
 
 /* Swiper */
+.swiper-pagination {
+  position: initial;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  background-color: hsl(0, 0%, 71%);
+}
+
+.swiper-pagination-bullet-active {
+  border: 5px solid var(--second-color);
+  background-color: transparent;
+  padding: 0.25rem;
+}
 
 /* ====================== BUTTON ========================= */
 .button {
@@ -148,11 +169,17 @@ img {
   right: -0.5rem;
   border: 3px solid var(--second-color);
   width: calc(100% - 1rem);
+  z-index: -1;
+  transition: all 0.3s var(--transition);
 }
 
 .button,
 .button::before {
   border-radius: 0.75rem;
+}
+
+.button:hover::before {
+  width: 30%;
 }
 
 /* ====================== MENU ========================= */
